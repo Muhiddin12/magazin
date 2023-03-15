@@ -1,0 +1,114 @@
+@import "./mixins";
+
+.header {
+  padding: 12px 0;
+  
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  // .header__logo
+
+  &__logo {
+    img {
+      height: 70px;
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  // .header__items
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  // .header__item
+
+  &__item {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  // .header__link
+
+  &__link {
+    @include text(20px, 24px);
+  }
+
+  // .header__contact
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+  }
+
+  // .header__tel
+
+  &__tel {
+    display: flex;
+    gap: 12px;
+
+    a {
+      @include text(20px, 24px);
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
+
+      @media (max-width: 770px) {
+        display: flex;
+      }
+    }
+
+    img {
+      @media (max-width: 1000px) {
+        display: none;
+      }
+
+      @media (max-width: 770px) {
+        display: flex;
+      }
+    }
+  }
+
+  // .header__btn
+
+  &__btn {
+    padding: 0 34px;
+    min-height: 42px;
+    background: #ffffff;
+    border: 1px solid #121761;
+    border-radius: 10px;
+    @include text(20px, 24px);
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    @media (max-width: 770px) {
+      display: none;
+    }
+  }
+}

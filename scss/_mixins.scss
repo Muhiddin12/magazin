@@ -1,0 +1,7 @@
+@mixin text($fz, $lh, $fw: 400px, $c: #475658) {
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $c;
+  font-family: "Lato";
+}
