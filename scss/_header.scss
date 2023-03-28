@@ -1,7 +1,15 @@
 @import "./mixins";
 
 .header {
-  padding: 12px 0;
+  padding: 20px 0;
+
+  @media (max-width: 1000px) {
+    padding: 14px 0;
+  }
+
+  @media (max-width: 770px) {
+    padding: 10px 0;
+  }
   
   &__container {
     display: flex;
@@ -19,7 +27,16 @@
 
   &__logo {
     img {
-      height: 70px;
+      height: 85px;
+      cursor: pointer;
+
+      @media (max-width: 1000px) {
+        height: 65px;
+      }
+
+      @media (max-width: 1000px) {
+        height: 60px;
+      }
     }
   }
 
@@ -84,6 +101,8 @@
     }
 
     img {
+      cursor: pointer;
+
       @media (max-width: 1000px) {
         display: none;
       }
