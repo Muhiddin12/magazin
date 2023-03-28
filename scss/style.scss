@@ -572,8 +572,16 @@
         color: white;
         font-size: 20px;
         border-radius: 12px;
-        width: 100%;
+        width: 60%;
         margin-bottom: 30px;
+      }
+
+      @media (max-width: 600px) {
+        width: 70%;
+      }
+
+      @media (max-width: 400px) {
+        width: 90%;
       }
     }
   }
